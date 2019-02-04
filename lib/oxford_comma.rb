@@ -1,5 +1,8 @@
 def oxford_comma(array)
   count = array.size 
-  
-  array.join(",")
+  case count
+    when 1
+      array.join(",")
+    when 2 
+      array.join(" and ")
 end
